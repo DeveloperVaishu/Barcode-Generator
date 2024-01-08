@@ -1,0 +1,91 @@
+.container{
+    
+    width: 300px;
+    border-radius: 20px;
+    background-image: linear-gradient(rgb(195, 231, 66),rgb(91, 198, 34));
+    box-shadow: 0 0 7px yellow;
+    margin: auto;
+    margin-top: 150px;
+    padding: 20px 20px;
+}
+
+font{
+    font-size: 22px;
+    
+}
+
+#input{
+    height: 40px;
+    width: 290px;
+    border: none;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    color: blue;
+}
+
+#enter{
+    height:50px;
+    width:100px;
+    color:white;
+    border: none;
+    background-color:  rgb(54, 54, 221);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+#enter:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(144, 0, 255);
+}
+
+#imgBox{
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+
+}
+
+#imgBox img{ 
+    width: 100%;
+    padding: 10px;
+}
+
+#imgBox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+
+.error{
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+
+    }
+    50%{
+        transform: translateX(0);
+
+    }
+
+    75%{
+        transform: translateX(2px);
+
+    }
+    100%{
+        transform: translateX(0);
+
+    }
+}
+
